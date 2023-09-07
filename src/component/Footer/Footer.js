@@ -1,47 +1,69 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import './Footer.css'
-
+import React from "react";
+import "./Footer.scss";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer>
-        <div className="container">
-            <div className="row">
-                <div className="col-md-6">
-                    <h5>Contact Us</h5>
-                    <p>Email: your@email.com</p>
-                    <p>Phone: +1234567890</p>
-                </div>
-                <div className="col-md-6">
-                    <h5>Follow Us</h5>
-                    <ul className="list-unstyled social-icons vertical-icons">
-                        <li>
-                        <a href="https://twitter.com/YourTwitterProfile" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faTwitter} size="1x"/>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="https://www.facebook.com/YourFacebookPage" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faFacebook} size="1x"/>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="https://www.linkedin.com/in/YourLinkedInProfile" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faLinkedin} size="1x"/>
-                        </a>
-                        </li>
-                        <li>
-                        <a href="https://github.com/YourGitHubProfile" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faGithub} size="1x"/>
-                        </a>
-                        </li>
-                        {/* Add more social media icons as needed */}
-                    </ul>
-                </div>
-            </div>
+      <div className="row">
+        <div className="col-md-12">
+          <div className="footer-logo">
+            <img
+              className="footer-logo-image"
+              src="/images/footer-image.svg"
+              alt="Laniakea Footer Logo"
+            />
+          </div>
         </div>
+      </div>
+      <div className="row">
+        <div className="col-md-8">
+          <ul className="navigation">
+            <li>
+              <a href="#section1">About Us</a>
+            </li>
+            <li>
+              <a href="#section3">Research</a>
+            </li>
+            <li>
+              <a href="#section3">Investment Strategy</a>
+            </li>
+            <li>
+              <a href="#section6">Contact Us</a>
+            </li>
+            <li>
+              <a href="#section2">Team</a>
+            </li>
+            <li>
+              <a href="#section5">Careers</a>
+            </li>
 
+            <li>
+              <a href="#section4">For Project</a>
+            </li>
+            <li>
+              <Link to="/disclaimer">Disclaimer</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="col-md-4 icon-list">
+          <ul className="list-unstyled social-icons vertical-icons">
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  className="icon"
+                  src="/images/telegram.svg"
+                  alt="Telegram"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img className="icon" src="/images/twitter.svg" alt="Twitter" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   );
 }

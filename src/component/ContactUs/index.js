@@ -20,9 +20,9 @@ function ContactUs() {
         <div className="row content padding-0">
           <div className="col-sm-12 col-md-7">
             <div className="split-container padding-0">
-              <div className="content-space d-none d-sm-block"></div>
+              <div className="content-space"></div>
               <div className="padding-0">
-                <p className="col-sm-12 col-md-10">
+                <p className="col-md-10">
                   Thank you for considering Laniakea as your investment and
                   strategic partner. We look forward to journeying through the
                   limitless opportunities in the digital asset and web3 realms
@@ -32,9 +32,9 @@ function ContactUs() {
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-5 d-none d-sm-block">
+          <div className="col-sm-12 col-md-5">
             <form>
-              <h4>For inquiries and partnerships, feel free to reach out:</h4>
+              <p>For inquiries and partnerships, feel free to reach out:</p>
               <div className="form-group">
                 <label for="name">Name:</label>
                 <input

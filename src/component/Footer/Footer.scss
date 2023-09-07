@@ -1,0 +1,88 @@
+@import "../../styles/mixin.scss";
+footer {
+  margin-top: 50px;
+  .footer-logo-image {
+    @include sm {
+      margin-top: 20px;
+      display: none;
+    }
+  }
+  .navigation {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 30px 0;
+    @include sm {
+      padding: 10px 0;
+      flex-direction: column;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    li {
+      flex: 0 0 calc(25% - 10px);
+
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+      margin: 5px; /* Adjust the margin to control the gap */
+      font-size: 26px;
+      font-weight: 500;
+      line-height: normal;
+      &:nth-last-child(-n + 4) {
+        border-left: 1px solid #d41876;
+      }
+      @include md {
+        flex: 0 0 calc(50% - 10px);
+        &:nth-last-child(-n + 4) {
+          border-left: none;
+        }
+      }
+      @include sm {
+        flex-direction: column;
+        flex: 1;
+        font-size: 20px;
+        &:nth-last-child(-n + 4) {
+          border-left: none;
+        }
+      }
+    }
+  }
+  .icon {
+    width: 69px;
+    height: 69px;
+    &-list {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style-type: none;
+      padding-right: 50px;
+      li {
+        margin: 0 20px;
+      }
+
+      @include md {
+        width: 100%;
+        justify-content: center;
+      }
+      @include sm {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.vertical-icons {
+  display: flex;
+  flex-direction: rows;
+}
+
+.vertical-icons li {
+  font-size: 1.5em;
+  margin: 10px 10px; /* Add spacing between the icons */
+}

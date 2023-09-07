@@ -68,7 +68,7 @@ function Content() {
           <section id="section5" className="full-scroll-section">
             <Careers></Careers>
           </section>
-          <section id="section5" className="full-scroll-section">
+          <section id="section6" className="full-scroll-section">
             <ContactUs></ContactUs>
           </section>
 
