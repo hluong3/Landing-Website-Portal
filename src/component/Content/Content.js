@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Content.css';
 import { Link } from 'react-scroll';
 import AboutUs from '../AboutUs/AboutUs';
-
+import Careers from '../Careers';
 function Content() {
     const [activeSection, setActiveSection] = useState('section1'); // Set an initial active section
     const [isScrolling, setIsScrolling] = useState(false);
@@ -63,6 +63,9 @@ function Content() {
                     <section id="section4" className="full-scroll-section">
                         <h2>Section 4</h2>
                         <p>Content for Section 4</p>
+                    </section>
+                    <section id="section5" className="full-scroll-section">
+                        <Careers></Careers>
                     </section>
 
                     {/* <ul className="dot-menu">
