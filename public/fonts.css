@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'HelveticaNeueMediumExtended';
+    src: url('/fonts/HelveticaMedExt.ttf') format('truetype'),
+         url('/fonts/HelveticaMedExtObl.ttf') format('truetype');
+    /* Add other font formats if available (e.g., .ttf, .eot) */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Apply the font to an element */
+  body {
+    font-family: 'HelveticaNeueMediumExtended', sans-serif;
+  }

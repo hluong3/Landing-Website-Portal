@@ -1,3 +1,8 @@
+.container-content{
+    background: #000;
+    margin-top: 60px;
+}  
+
 .full-scroll-container {
     display: flex;
     flex-direction: column;
@@ -11,13 +16,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
     transition: background-color 0.5s; /* Optional: Add transitions for smoother visual effects */
 }
   
 .full-scroll-section:nth-child(even) {
-    background-color: #ffffff;
+    background-color: #000;
+    color: #fff;
 }
 
 .dot-menu {
@@ -31,7 +38,7 @@
     /* border-radius: 50%; Make the dot menu circular */
     padding: 8px; /* Add padding to the dot menu for spacing */
 }
-  
+
 .dot-menu li {
     text-align: center;
     margin-bottom: 10px; /* Adjust the spacing between dots */
@@ -41,15 +48,15 @@
     width: 20px;
     height: 20px;
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
     display: block;
     /* padding: 6px 10px; */
     border-radius: 50%; /* Make the dots circular */
-    background-color: rgba(0, 0, 0, 0.5); /* Dot background color */
+    background-color: rgba(256, 256, 256, 0.5); /* Dot background color */
 }
 
 .dot-menu a.active {
-    background-color: #007bff; /* Active dot background color */
+    background-color: #D41876; /* Active dot background color */
     color: #fff; /* Active dot text color */
 }

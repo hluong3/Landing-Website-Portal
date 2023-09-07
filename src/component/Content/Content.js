@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Content.css';
 import { Link } from 'react-scroll';
+import AboutUs from '../AboutUs/AboutUs';
 
 function Content() {
     const [activeSection, setActiveSection] = useState('section1'); // Set an initial active section
@@ -44,12 +45,12 @@ function Content() {
     }
 
     return (
-        <div className="container" style={{ marginTop: '60px' }}>
+        <div className="container-content" style={{}}>
             <div className="scrollable-content" style={{ overflow: 'hidden' }}>
                 <div className="full-scroll-container">
+                    
                     <section id="section1" className="full-scroll-section">
-                        <h2>Section 1</h2>
-                        <p>Content for Section 1</p>
+                        <AboutUs></AboutUs>
                     </section>
                     <section id="section2" className="full-scroll-section">
                         <h2>Section 2</h2>
@@ -59,12 +60,17 @@ function Content() {
                         <h2>Section 3</h2>
                         <p>Content for Section 3</p>
                     </section>
+                    <section id="section4" className="full-scroll-section">
+                        <h2>Section 4</h2>
+                        <p>Content for Section 4</p>
+                    </section>
 
-                    <ul className="dot-menu">
+                    {/* <ul className="dot-menu">
                         <li><a href="#section1" className={activeSection === 'section1' ? 'active' : ''} onClick={() => handleDotItemClick('section1')}></a></li>
                         <li><a href="#section2" className={activeSection === 'section2' ? 'active' : ''} onClick={() => handleDotItemClick('section2')}></a></li>
                         <li><a href="#section3" className={activeSection === 'section3' ? 'active' : ''} onClick={() => handleDotItemClick('section3')}></a></li>
-                    </ul>
+                        <li><a href="#section4" className={activeSection === 'section4' ? 'active' : ''} onClick={() => handleDotItemClick('section4')}></a></li>
+                    </ul> */}
                 </div>
             </div>
         </div>

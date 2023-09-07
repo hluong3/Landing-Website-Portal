@@ -5,7 +5,7 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <footer className="bg-light py-3">
+    <footer>
         <div className="container">
             <div className="row">
                 <div className="col-md-6">

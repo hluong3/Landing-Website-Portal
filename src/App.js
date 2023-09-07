@@ -10,7 +10,7 @@ import Content from './component/Content/Content';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
 
       <Content />
