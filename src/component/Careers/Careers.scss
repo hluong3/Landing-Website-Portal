@@ -1,0 +1,30 @@
+@import "../../styles/mixin.scss";
+.careers {
+  .heading-text {
+    font-size: 26px;
+  }
+
+  &-list {
+    font-size: 26px;
+    list-style-type: none;
+    text-align: left;
+    @include sm {
+      font-size: 20px;
+    }
+  }
+  &-item {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-description {
+      margin: 10px 0;
+    }
+  }
+  .underline {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+}

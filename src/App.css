@@ -2,6 +2,7 @@
   text-align: center;
   background-color: #000;
   color: #fff;
+  overflow-x: hidden;
 }
 
 @media (max-width: 767px) {
@@ -28,7 +29,6 @@
   /* Your styles for large desktops or wide screens */
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-       (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   /* Your styles for high DPI screens */
 }
