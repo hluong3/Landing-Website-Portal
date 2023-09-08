@@ -1,4 +1,6 @@
 import React from "react";
+import SmoothScroll from "../SmoothScroll/SmoothScroll";
+
 import "./Careers.scss";
 
 function Careers() {
@@ -25,7 +27,9 @@ function Careers() {
               <div className="content-text p-md-0">
                 <ul className="careers-list">
                   <li className="careers-item">
-                    <p className="underline">Junior Investment</p>
+                    <SmoothScroll targetId="section7">
+                      <p className="underline">Junior Investment</p>
+                    </SmoothScroll>
                     <ul className="careers-item-description">
                       <li>
                         Responsibilities: Conduct industry research, ﬁnancial
@@ -35,7 +39,9 @@ function Careers() {
                     </ul>
                   </li>
                   <li className="careers-item">
-                    <p className="underline">Community Manager</p>
+                    <SmoothScroll targetId="section7">
+                      <p className="underline">Community Manager</p>
+                    </SmoothScroll>
                     <ul className="careers-item-description">
                       <li>
                         Responsibilities: Manage social media platforms and
@@ -49,7 +55,11 @@ function Careers() {
                     </ul>
                   </li>
                   <li className="careers-item">
-                    <p className="underline">Finance and Operational Analyst</p>
+                    <SmoothScroll targetId="section7">
+                      <p className="underline">
+                        Finance and Operational Analyst
+                      </p>
+                    </SmoothScroll>
                     <ul className="careers-item-description">
                       <li>
                         Responsibilities: Oversee ﬁnancial planning and

@@ -1,16 +1,20 @@
-@import '../../styles/styles.scss';
+@import "../../styles/styles.scss";
 @import "../../styles/mixin.scss";
 
-.careers{
+.careers {
   text-align: left;
 
   &-list {
     padding-left: 0;
-    font-size: 20px;
+    font-size: $content-font-size;
     list-style-type: none;
     text-align: left;
     @include sm {
-      font-size: 20px;
+      font-size: $content-font-size;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
     }
   }
   &-item {
@@ -31,75 +35,75 @@
   }
 
   .heading {
-      .split-container{
-          display: flex;
-          align-items: center;
-      }
-  
-      .heading-line {
-          margin-right: 15px;
-          width: 55px;
-          height: auto;
+    .split-container {
+      display: flex;
+      align-items: center;
+    }
 
-          > hr{
-              border: 2px solid $third-color;
-          }
-      }
+    .heading-line {
+      margin-right: 15px;
+      width: 55px;
+      height: auto;
 
-      .heading-text{
-          display: flex;
-          align-items: center;
-          color: $third-color;
-      
-          font-family: 'HelveticaNeueMediumExtended', sans-serif;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 500;
-          text-transform: capitalize;
+      > hr {
+        border: 2px solid $third-color;
       }
-  }
+    }
 
-  .content{
-      margin-top: 15px;
-  
-      color: $second-color;
-      font-family: 'HelveticaNeueMediumExtended', sans-serif;
-      font-size: 20px;
+    .heading-text {
+      display: flex;
+      align-items: center;
+      color: $third-color;
+
+      font-family: "HelveticaNeueMediumExtended", sans-serif;
+      font-size: $content-font-size;
       font-style: normal;
       font-weight: 500;
-      line-height: normal;
-      letter-spacing: -0.56px;
+      text-transform: capitalize;
+    }
+  }
 
-      .split-container{
-          display: flex;
-          align-items: center;
+  .content {
+    margin-top: 15px;
 
-          .content-space {
-              margin-right: 20px;
-              width: 55px;
-              height: auto; 
-          }
+    color: $second-color;
+    font-family: "HelveticaNeueMediumExtended", sans-serif;
+    font-size: $content-font-size;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.56px;
 
-          .content-text {
-              padding-left: 15px;
-              padding-right: 15px;
-              width: fit-content;
+    .split-container {
+      display: flex;
+      align-items: center;
 
-              p{
-                  /* text-align: justify; */
-                  .highlight{
-                      font-family: 'HelveticaNeueLTW06-97BlkCnObl', sans-serif;
-                      color: $third-color;
-                      font-style: normal;
-                      font-weight: 900;
-                      line-height: normal;
-                  }
-              }
-          }
+      .content-space {
+        margin-right: 20px;
+        width: 55px;
+        height: auto;
       }
 
-      .image-right{
-          width: -webkit-fill-available;
+      .content-text {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: fit-content;
+
+        p {
+          /* text-align: justify; */
+          .highlight {
+            font-family: "HelveticaNeueLTW06-97BlkCnObl", sans-serif;
+            color: $third-color;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+          }
+        }
       }
+    }
+
+    .image-right {
+      width: -webkit-fill-available;
+    }
   }
 }

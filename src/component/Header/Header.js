@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.scss'
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -36,7 +37,15 @@ function Header() {
 
             {/* Add buttons to the right */}
             <div className="ml-auto d-none d-sm-block">
-              <button className="btn btn-primary btn-client-login">Client Login</button>
+              <Link to="/login">
+                <button className="btn btn-primary btn-client-login">Client Login</button>
+              </Link>
+            </div>
+
+            <div className="ml-auto d-sm-none">
+              <Link to="/login">
+                <button className="btn btn-primary btn-client-login">Login</button>
+              </Link>
             </div>
           </div>
         </nav>

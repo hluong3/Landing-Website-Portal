@@ -1,22 +1,28 @@
 import logo from './logo.svg';
 import './App.scss';
 
-import Button from '@mui/material/Button';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Header from './component/Header/Header';
-import Footer from './component/Footer/Footer';
-
-import Content from './component/Content/Content';
+import Home from './component/Home/Home';
+import Login from './component/Login/index';
+import Disclaimer from './component/Disclaimer/index';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    // <div className="App">
+    //   <Header />
 
-      <Content />
+    //   <Content />
 
-      <Footer />
-    </div>
+    //   <Footer />
+    // </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/login" element={<Login />} ></Route>
+        <Route path="/disclaimer" element={<Disclaimer />} ></Route>
+      </Routes>
+    </Router>
   );
 }
 

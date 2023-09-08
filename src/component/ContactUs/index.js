@@ -48,7 +48,8 @@ function ContactUs() {
           <div className="col-sm-12 col-md-7">
             <div className="split-container p-md-0">
               <div className="content-space"></div>
-              <div className="p-md-0">
+
+              <div className="content-text p-md-0">
                 <p className="col-md-10">
                   Thank you for considering Laniakea as your investment and
                   strategic partner. We look forward to journeying through the

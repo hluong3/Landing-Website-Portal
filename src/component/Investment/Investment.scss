@@ -25,7 +25,7 @@
             color: $third-color;
         
             font-family: 'HelveticaNeueMediumExtended', sans-serif;
-            font-size: 20px;
+            font-size: $content-font-size;
             font-style: normal;
             font-weight: 500;
             text-transform: capitalize;
@@ -37,7 +37,7 @@
     
         color: $second-color;
         font-family: 'HelveticaNeueMediumExtended', sans-serif;
-        font-size: 20px;
+        font-size: $content-font-size;
         font-style: normal;
         font-weight: 500;
         line-height: normal;

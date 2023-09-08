@@ -1,8 +1,4 @@
-$primary-color: #000;
-$second-color: #fff;
-$third-color: #D41876;
-$fourth-color: #FF3FFF;
-$fifth-color: #9436FF;
+@import "./variables.scss";
 
 body {
   background-color: $primary-color;

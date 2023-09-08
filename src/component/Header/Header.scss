@@ -45,6 +45,11 @@
     border-radius: 10px; 
     background-color: $third-color;
 
+    &:hover{
+      background-color: $second-color;
+      color: $third-color;
+    }
+
     &:active{
       background-color: $second-color;
       color: $third-color;
