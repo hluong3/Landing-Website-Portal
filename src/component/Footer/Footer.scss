@@ -1,6 +1,8 @@
 @import "../../styles/mixin.scss";
 footer {
   margin-top: 50px;
+  overflow: hidden;
+
   .footer-logo-image {
     @include sm {
       margin-top: 20px;
@@ -27,9 +29,9 @@ footer {
 
       padding: 10px;
       box-sizing: border-box;
-      text-align: center;
+      text-align: left;
       margin: 5px; /* Adjust the margin to control the gap */
-      font-size: 20px;
+      font-size: $content-font-size;
       font-weight: 500;
       line-height: normal;
       &:nth-last-child(-n + 4) {
@@ -44,7 +46,7 @@ footer {
       @include sm {
         flex-direction: column;
         flex: 1;
-        font-size: 20px;
+        font-size: $content-font-size;
         &:nth-last-child(-n + 4) {
           border-left: none;
         }

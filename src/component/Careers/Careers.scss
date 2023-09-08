@@ -6,11 +6,11 @@
 
   &-list {
     padding-left: 0;
-    font-size: 20px;
+    font-size: $content-font-size;
     list-style-type: none;
     text-align: left;
     @include sm {
-      font-size: 20px;
+      font-size: $content-font-size;
     }
   }
   &-item {
@@ -52,7 +52,7 @@
           color: $third-color;
       
           font-family: 'HelveticaNeueMediumExtended', sans-serif;
-          font-size: 20px;
+          font-size: $content-font-size;
           font-style: normal;
           font-weight: 500;
           text-transform: capitalize;
@@ -64,7 +64,7 @@
   
       color: $second-color;
       font-family: 'HelveticaNeueMediumExtended', sans-serif;
-      font-size: 20px;
+      font-size: $content-font-size;
       font-style: normal;
       font-weight: 500;
       line-height: normal;

@@ -38,6 +38,10 @@ function Header() {
             <div className="ml-auto d-none d-sm-block">
               <button className="btn btn-primary btn-client-login">Client Login</button>
             </div>
+
+            <div className="ml-auto d-sm-none">
+              <button className="btn btn-primary btn-client-login">Login</button>
+            </div>
           </div>
         </nav>
       </header>

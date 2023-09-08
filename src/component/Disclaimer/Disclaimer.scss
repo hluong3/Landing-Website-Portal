@@ -34,7 +34,7 @@
     margin: 20px 0;
 
     @include sm {
-      font-size: 20px;
+      font-size: $content-font-size;
     }
   }
   .navigate {
@@ -65,7 +65,7 @@
     }
     @include sm {
       height: 70px;
-      font-size: 20px;
+      font-size: $content-font-size;
       border-radius: 10px;
     }
   }
