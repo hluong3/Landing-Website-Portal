@@ -62,9 +62,9 @@ footer {
       justify-content: flex-end;
       align-items: center;
       list-style-type: none;
-      padding-right: 50px;
       li {
-        margin: 0 20px;
+        margin: 0;
+        margin-left: 20px;
       }
 
       @include md {
@@ -76,6 +76,15 @@ footer {
         justify-content: center;
         padding-right: 0;
       }
+    }
+  }
+  .info {
+    padding: 0 50px;
+    @include sm {
+      padding: 0;
+    }
+    @include md {
+      padding: 0;
     }
   }
 }

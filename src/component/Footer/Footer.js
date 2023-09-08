@@ -18,7 +18,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row info">
         <div className="col-md-8">
           <ul className="navigation">
             <li>
