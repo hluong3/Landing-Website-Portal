@@ -1,6 +1,10 @@
 @import "../../styles/mixin.scss";
-.disclaimer {
-  padding: 70px 0;
+.login {
+  // padding: 70px 0;
+
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
 
   @include sm {
     padding: 100px 0;
@@ -43,17 +47,93 @@
     justify-content: center;
   }
   a {
-    width: 50%;
-    @include sm {
+    width: 100%;
+  }
+ 
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .form-group {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-bottom: 30px;
+      @include sm {
+        width: 95%;
+        margin: 0 auto;
+      }
+      
+      input {
+        width: 100%;
+        height: 70px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 0 10px;
+        font-size: 16px;
+        &:focus {
+          outline: none;
+        }
+        &:placeholder-shown {
+          color: #8e8e8e;
+          font-size: $content-font-size;
+          @include sm {
+            font-size: $content-font-size;
+          }
+        }
+      }
+    }
+
+    .message-error{
+      margin-bottom: 30px;
+      margin-left: 30px;
+      color: red;
+      font-style: italic;
+      font-size: $content-font-size;
+      font-family: 'HelveticaNeueMediumExtended';
+    }    
+
+    .btn-login {
+      width: 100%;
+      height: 70px;
+      border: none;
+      border-radius: 30px;
+      background: #d41876;
+      color: #fff;
+      font-size: $content-font-size;
+      font-weight: 500;
+      margin-bottom: 30px;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        color: #c4176f;
+        background: #fff;
+      }
+      @include sm {
+        width: 95%;
+        margin: 0 auto;
+        font-size: $content-font-size;
+        margin-top: 20px;
+      }
     }
   }
-  button {
+
+  .btn-home {
     width: 100%;
-    height: 100px;
+    height: 70px;
     border-radius: 30px;
+    color:#fff;
     background: #9436ff;
-    font-size: 28px;
+    font-size: $content-font-size;
     font-weight: 500;
     align-self: center;
     &:focus {

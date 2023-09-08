@@ -72,6 +72,8 @@
         }
 
         .image-right{
+            object-fit: cover;
+            max-height: 420px;
             width: -webkit-fill-available;
         }
     }

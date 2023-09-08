@@ -2,12 +2,21 @@
 footer {
   margin-top: 50px;
   overflow-x: hidden;
-  .footer-logo-image {
-    @include sm {
-      margin-top: 20px;
-      display: none;
+
+  .footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer-logo-image {
+      @include sm {
+        margin-top: 20px;
+        display: none;
+      }
     }
   }
+
+  
   .navigation {
     width: 100%;
     display: flex;

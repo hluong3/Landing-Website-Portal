@@ -6,7 +6,7 @@ function Header() {
     return (
       <header className="fixed-header">
         <nav className="navbar navbar-expand-lg">
-          <div className="container">
+          <div className="container-fluid">
             <a className="navbar-brand" href="/">
               <img
                 src="/logo.png"
@@ -38,13 +38,13 @@ function Header() {
             {/* Add buttons to the right */}
             <div className="ml-auto d-none d-sm-block">
               <Link to="/login">
-                <button className="btn btn-primary btn-client-login">Client Login</button>
+                <button className="btn btn-client-login">Client Login</button>
               </Link>
             </div>
 
             <div className="ml-auto d-sm-none">
               <Link to="/login">
-                <button className="btn btn-primary btn-client-login">Login</button>
+                <button className="btn btn-client-login">Login</button>
               </Link>
             </div>
           </div>
