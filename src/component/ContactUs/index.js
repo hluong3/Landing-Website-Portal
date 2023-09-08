@@ -2,7 +2,7 @@ import React from "react";
 import "./ContactUs.scss";
 
 const URL =
-  "https://script.google.com/macros/s/AKfycby3ENNZysKvx6TtNvln8mFHtgApchox7-aLhYo3Qw_rpmnv2H2HNXN-TVNPjHsnJTax/exec";
+  "https://script.google.com/macros/s/AKfycbxZkdQSAdpNvdRh7r6S6dA1nZCSh-vrVlt_lDbGtQ_HTiJhBbbl_FqZd8mnLr7XjYJB/exec";
 
 function ContactUs() {
   const submit = (e) => {
