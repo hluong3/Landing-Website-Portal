@@ -1,12 +1,13 @@
 import React from "react";
 import "./Careers.scss";
+
 function Careers() {
   return (
     <div className="container">
       <div className="careers">
-        <div className="row heading padding-0 ">
+        <div className="row heading p-md-0 ">
           <div className="col-sm-12 col-md-6">
-            <div className="split-container padding-0">
+            <div className="split-container p-md-0">
               <div className="heading-line">
                 <hr />
               </div>
@@ -17,11 +18,11 @@ function Careers() {
           <div className="col-sm-12 col-md-6"></div>
         </div>
 
-        <div className="row content padding-0">
+        <div className="row content p-md-0">
           <div className="col-12">
-            <div className="split-container padding-0">
+            <div className="split-container p-md-0">
               <div className="content-space d-none d-sm-block"></div>
-              <div className="content-text padding-0">
+              <div className="content-text p-md-0">
                 <ul className="careers-list">
                   <li className="careers-item">
                     <p className="underline">Junior Investment</p>

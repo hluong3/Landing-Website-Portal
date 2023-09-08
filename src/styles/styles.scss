@@ -1,0 +1,39 @@
+$primary-color: #000;
+$second-color: #fff;
+$third-color: #D41876;
+$fourth-color: #FF3FFF;
+$fifth-color: #9436FF;
+
+body {
+  background-color: $primary-color;
+  color: $second-color;
+}
+
+@media (max-width: 767px) {
+    /* Your styles for mobile phones in portrait mode */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Your styles for mobile phones in landscape mode or small tablets */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Your styles for tablets in portrait mode */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Your styles for tablets in landscape mode or small laptops */
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    /* Your styles for small to medium-sized desktops */
+}
+
+@media (min-width: 1600px) {
+    /* Your styles for large desktops or wide screens */
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+    /* Your styles for high DPI screens */
+}

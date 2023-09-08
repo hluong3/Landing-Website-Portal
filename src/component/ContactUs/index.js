@@ -4,9 +4,9 @@ function ContactUs() {
   return (
     <div className="container">
       <div className="contact-us">
-        <div className="row heading padding-0 ">
+        <div className="row heading p-md-0 ">
           <div className="col-sm-12 col-md-6">
-            <div className="split-container padding-0">
+            <div className="split-container p-md-0">
               <div className="heading-line">
                 <hr />
               </div>
@@ -17,11 +17,11 @@ function ContactUs() {
           <div className="col-sm-12 col-md-6"></div>
         </div>
 
-        <div className="row content padding-0">
+        <div className="row content p-md-0">
           <div className="col-sm-12 col-md-7">
-            <div className="split-container padding-0">
+            <div className="split-container p-md-0">
               <div className="content-space"></div>
-              <div className="padding-0">
+              <div className="p-md-0">
                 <p className="col-md-10">
                   Thank you for considering Laniakea as your investment and
                   strategic partner. We look forward to journeying through the
@@ -36,7 +36,7 @@ function ContactUs() {
             <form>
               <p>For inquiries and partnerships, feel free to reach out:</p>
               <div className="form-group">
-                <label for="name">Name:</label>
+                <label htmlFor="name">Name:</label>
                 <input
                   type="text"
                   className="form-control"
@@ -45,7 +45,7 @@ function ContactUs() {
                 />
               </div>
               <div className="form-group">
-                <label for="email">Email:</label>
+                <label htmlFor="email">Email:</label>
                 <input
                   type="email"
                   className="form-control"
@@ -54,7 +54,7 @@ function ContactUs() {
                 />
               </div>
               <div className="form-group">
-                <label for="phone">Phone:</label>
+                <label htmlFor="phone">Phone:</label>
                 <input
                   type="text"
                   className="form-control"
@@ -63,7 +63,7 @@ function ContactUs() {
                 />
               </div>
               <div className="form-group">
-                <label for="message">Message:</label>
+                <label htmlFor="message">Message:</label>
                 <textarea
                   className="form-control"
                   id="message"
