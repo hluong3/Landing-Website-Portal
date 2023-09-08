@@ -60,7 +60,7 @@ function Login() {
               </div>
 
               { invalid && (
-                <label className="message-error">Invalid Login Details</label>
+                <label className="message-error">Invalid Login</label>
               )}
               
               <button type="submit" className="btn btn-login">Login</button>
