@@ -18,9 +18,8 @@ function Content() {
         // Find the active section by checking which one is in the viewport
         for (const section of sections) {
           const rect = section.getBoundingClientRect();
-          console.log(rect.top, rect.bottom, window.innerHeight);
           if (rect.top >= 0 && rect.bottom <= window.innerHeight + 60) {
-            console.log(section.id);
+            // console.log(section.id);
             setActiveSection(section.id);
           }
         }
