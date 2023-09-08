@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Content.scss";
-import { Link, Element, Events, animateScroll as scroll } from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll } from "react-scroll";
 
 import AboutUs from "../AboutUs/AboutUs";
 import Team from "../Team/Team";
@@ -63,13 +63,9 @@ function Content() {
   return (
     <div className="container">
       <div className="container-content">
-        <div style={{height:"60px"}}>
-
-        </div>
+        <div style={{ height: "60px" }}></div>
         <div className="scrollable-content" style={{ overflow: "hidden" }}>
           <div className="full-scroll-container">
-           
-
             <section id="section1" className="full-scroll-section">
               <AboutUs></AboutUs>
             </section>
@@ -108,7 +104,6 @@ function Content() {
         </div>
       </div>
     </div>
-    
   );
 }
 

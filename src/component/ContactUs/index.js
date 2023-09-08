@@ -1,6 +1,33 @@
 import React from "react";
 import "./ContactUs.scss";
+
+const URL =
+  "https://script.google.com/macros/s/AKfycbxZkdQSAdpNvdRh7r6S6dA1nZCSh-vrVlt_lDbGtQ_HTiJhBbbl_FqZd8mnLr7XjYJB/exec";
+
 function ContactUs() {
+  const submit = (e) => {
+    e.preventDefault();
+    const { name, email, phone, message } = e.target;
+    fetch(URL, {
+      method: "POST",
+      mode: "no-cors",
+      body: JSON.stringify({
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        message: message.value,
+      }),
+    })
+      .then((res) => {
+        console.log(res);
+        alert("Message sent successfully!");
+        e.target.reset();
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("Message failed to send!");
+      });
+  };
   return (
     <div className="container">
       <div className="contact-us">
@@ -34,7 +61,7 @@ function ContactUs() {
           </div>
 
           <div className="col-sm-12 col-md-5">
-            <form>
+            <form onSubmit={submit}>
               <p>For inquiries and partnerships, feel free to reach out:</p>
               <div className="form-group">
                 <label htmlFor="name">Name:</label>

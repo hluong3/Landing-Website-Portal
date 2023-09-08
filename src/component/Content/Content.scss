@@ -1,66 +1,68 @@
-@import '../../styles/styles.scss';
+@import "../../styles/styles.scss";
 
-.container-content{
-    .full-scroll-container {
-        // margin-top: 40px;
+.container-content {
+  section {
+    padding-top: 30px;
+  }
+  .full-scroll-container {
+    // margin-top: 40px;
 
-        display: flex;
-        flex-direction: column;
-        /* height: 100vh; */
-        /* overflow-y: scroll; Enable scrolling within the container */
-        scroll-behavior: smooth; /* Smooth scrolling behavior */
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    /* overflow-y: scroll; Enable scrolling within the container */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
 
-        .full-scroll-section {
-            margin: 20px 0;
+    .full-scroll-section {
+      margin: 20px 0;
 
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            // min-height: 100vh;
-            background-color: $primary-color;
-            color: $second-color;
-            transition: background-color 0.5s; /* Optional: Add transitions for smoother visual effects */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      // min-height: 100vh;
+      background-color: $primary-color;
+      color: $second-color;
+      transition: background-color 0.5s; /* Optional: Add transitions for smoother visual effects */
 
-            // &:nth-child(even) {
-            //     background-color: $primary-color;
-            //     color: $second-color;
-            // }
-        }
-
-        .dot-menu {
-            list-style: none;
-            padding: 0;
-            position: fixed;
-            top: 50%; /* Center the dot menu vertically */
-            transform: translateY(-50%);
-            right: 10px; /* Adjust the distance from the right edge of the screen */
-            /* background-color: rgba(255, 255, 255, 0.8); Background color for the dot menu */
-            /* border-radius: 50%; Make the dot menu circular */
-            padding: 8px; /* Add padding to the dot menu for spacing */
-
-            li {
-                text-align: center;
-                margin-bottom: 10px; /* Adjust the spacing between dots */
-            }
-
-            a {
-                width: 20px;
-                height: 20px;
-                text-decoration: none;
-                color: $second-color;
-                font-weight: bold;
-                display: block;
-                /* padding: 6px 10px; */
-                border-radius: 50%; /* Make the dots circular */
-                background-color: rgba(256, 256, 256, 0.5); /* Dot background color */
-
-                &.active {
-                    background-color: $third-color; /* Active dot background color */
-                    color: $second-color; /* Active dot text color */
-                }
-            }
-            
-        }
+      // &:nth-child(even) {
+      //     background-color: $primary-color;
+      //     color: $second-color;
+      // }
     }
-}  
+
+    .dot-menu {
+      list-style: none;
+      padding: 0;
+      position: fixed;
+      top: 50%; /* Center the dot menu vertically */
+      transform: translateY(-50%);
+      right: 10px; /* Adjust the distance from the right edge of the screen */
+      /* background-color: rgba(255, 255, 255, 0.8); Background color for the dot menu */
+      /* border-radius: 50%; Make the dot menu circular */
+      padding: 8px; /* Add padding to the dot menu for spacing */
+
+      li {
+        text-align: center;
+        margin-bottom: 10px; /* Adjust the spacing between dots */
+      }
+
+      a {
+        width: 20px;
+        height: 20px;
+        text-decoration: none;
+        color: $second-color;
+        font-weight: bold;
+        display: block;
+        /* padding: 6px 10px; */
+        border-radius: 50%; /* Make the dots circular */
+        background-color: rgba(256, 256, 256, 0.5); /* Dot background color */
+
+        &.active {
+          background-color: $third-color; /* Active dot background color */
+          color: $second-color; /* Active dot text color */
+        }
+      }
+    }
+  }
+}
