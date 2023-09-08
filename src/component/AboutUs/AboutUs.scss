@@ -1,0 +1,87 @@
+@import '../../styles/styles.scss';
+
+.about-us{
+    text-align: left;
+
+    .heading {
+        .split-container{
+            display: flex;
+            align-items: center;
+        }
+    
+        .heading-line {
+            margin-right: 15px;
+            width: 55px;
+            height: auto;
+
+            > hr{
+                border: 2px solid $third-color;
+            }
+        }
+
+        .heading-text{
+            display: flex;
+            align-items: center;
+            color: $third-color;
+        
+            font-family: 'HelveticaNeueMediumExtended', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+    }
+
+    .content{
+        margin-top: 15px;
+    
+        color: $second-color;
+        font-family: 'HelveticaNeueMediumExtended', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.56px;
+
+        .split-container{
+            display: flex;
+            align-items: center;
+
+            .content-space {
+                margin-right: 20px;
+                width: 55px;
+                height: auto; 
+            }
+
+            .content-text {
+                padding-left: 15px;
+                padding-right: 15px;
+                width: fit-content;
+
+                p{
+                    /* text-align: justify; */
+                    .highlight{
+                        font-family: 'HelveticaNeueLTW06-97BlkCnObl', sans-serif;
+                        color: $third-color;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+
+        .image-right{
+            width: -webkit-fill-available;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

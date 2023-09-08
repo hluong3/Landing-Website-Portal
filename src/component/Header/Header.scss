@@ -1,0 +1,53 @@
+@import '../../styles/styles.scss';
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $primary-color;
+  color: $second-color;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Ensures the header appears above other content */
+
+  .navbar-brand{
+    display: flex !important;
+    align-items: flex-end !important;
+    text-decoration: none !important;
+    color: inherit !important;
+  
+    font-family: 'Voga', sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+
+    &:hover{
+
+    }
+
+    > .logo{
+      margin-left: 10px;
+      width: 55px;
+      height: 50px;
+    }
+
+    > span{
+      padding-left: 15px;
+      color: $third-color;
+    }
+  }
+
+  .btn-client-login{
+    /* width: 240px;
+    height: 104px;*/
+    border-radius: 10px; 
+    background-color: $third-color;
+
+    &:active{
+      background-color: $second-color;
+      color: $third-color;
+    }
+  }
+}
