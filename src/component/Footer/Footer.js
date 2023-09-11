@@ -26,27 +26,25 @@ function Footer() {
                 <SmoothScroll targetId="section1">About Us</SmoothScroll>
               </li>
               <li>
-                <SmoothScroll targetId="section5">Research</SmoothScroll>
-              </li>
-              <li>
-                <SmoothScroll targetId="section7">Contact Us</SmoothScroll>
+                <SmoothScroll targetId="section2">Team</SmoothScroll>
               </li>
               <li>
                 <SmoothScroll targetId="section3">
                   Investment Strategy
                 </SmoothScroll>
               </li>
-
               <li>
-                <SmoothScroll targetId="section2">Team</SmoothScroll>
+                <SmoothScroll targetId="section4">For Projects</SmoothScroll>
+              </li>
+              <li>
+                <SmoothScroll targetId="section5">Research</SmoothScroll>
               </li>
               <li>
                 <SmoothScroll targetId="section6">Careers</SmoothScroll>
               </li>
               <li>
-                <SmoothScroll targetId="section4">For Project</SmoothScroll>
+                <SmoothScroll targetId="section7">Contact Us</SmoothScroll>
               </li>
-
               <li>
                 <Link to="/disclaimer">Disclaimer</Link>
               </li>
@@ -73,14 +71,17 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="icon" src="/images/twitter.svg" alt="Twitter" />
+                  <img
+                    className="icon"
+                    src="/images/twitter.svg"
+                    alt="Twitter"
+                  />
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      
     </footer>
   );
 }
