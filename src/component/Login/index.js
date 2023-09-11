@@ -28,7 +28,7 @@ function Login() {
       <div className="login">
         <div className="row heading">
           <img className="login-image" src="/logo.png" alt="Login" />
-          <span className="company-name">Laniakea</span>
+          <span className="company-name">Laniakea Capital</span>
         </div>
 
         <div className="row content">
