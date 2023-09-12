@@ -3,38 +3,31 @@ import './Team.scss';
 
 function Team() {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="team">
-                {/* <div className="row heading p-md-0">
-                    <div className="col-sm-12 col-md-6">
+                <div className="row image p-md-0">
+                    <div className="col-sm-12 p-md-0">
+                        <img
+                            src="/images/Team_BG.png"
+                            alt="Team"
+                        />
+                    </div>
+                </div>
+
+                <div className="row heading p-md-0">
+                    <div className="col-md-1"></div>
+                    <div className="col-sm-12 col-md-10">
                         <div className="split-container p-md-0">
                             <div className="heading-line"><hr/></div>
                             <div className="heading-text">Team</div>
                         </div>
                     </div>
-
-                    <div className="col-sm-12 col-md-6"></div>
-                </div> */}
+                    <div className="col-md-1"></div>
+                </div>
 
                 <div className="row content p-md-0">
-                    <div className="col-sm-12 col-md-6">
-                        <img
-                            src="/images/team.png"
-                            alt="Team"
-                            className="image-right"
-                        />
-                    </div>
-
-                    <div className="col-sm-12 col-md-6">
-                        <div className="row heading p-md-0">
-                            <div className="col-sm-12">
-                                <div className="split-container">
-                                    <div className="heading-line"><hr/></div>
-                                    <div className="heading-text">Team</div>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div className="col-md-1"></div>
+                    <div className="col-sm-12 col-md-10">
                         <div className="split-container p-md-0">
                             <div className="content-text p-md-0">
                                 <p>Our team comes from diverse backgrounds including Investment Banking, Private Equity, and Venture Capital. We excel in various facets of investment, from traditional arenas to the dynamic landscapes of blockchain and crypto.</p>
@@ -45,7 +38,7 @@ function Team() {
                             </div>
                         </div>
                     </div>
-
+                    <div className="col-md-1"></div>
                 </div>
 
             </div>

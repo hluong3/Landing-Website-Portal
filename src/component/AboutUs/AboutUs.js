@@ -3,29 +3,31 @@ import './AboutUs.scss';
 
 function AboutUs() {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="about-us">
+                <div className="row image p-md-0">
+                    <div className="col-sm-12 p-md-0">
+                        <img
+                            src="/images/AboutUs_BG.png"
+                            alt="About Us"
+                        />
+                    </div>
+                </div>
+
                 <div className="row heading p-md-0">
-                    <div className="col-sm-12 col-md-6">
+                    <div className="col-md-1"></div>
+                    <div className="col-sm-12 col-md-10">
                         <div className="split-container p-md-0">
                             <div className="heading-line"><hr/></div>
                             <div className="heading-text">About Us</div>
                         </div>
                     </div>
-
-                    <div className="col-sm-12 col-md-6"></div>
+                    <div className="col-md-1"></div>
                 </div>
 
                 <div className="row content p-md-0">
-                    <div className="col-sm-12 col-md-6 d-sm-none">
-                        <img
-                            src="/images/about-us.png"
-                            alt="About Us"
-                            className="image-right"
-                        />
-                    </div>
-
-                    <div className="col-sm-12 col-md-6">
+                    <div className="col-md-1"></div>
+                    <div className="col-sm-12 col-md-10">
                         <div className="split-container p-md-0">
                             <div className="content-space d-none d-sm-block"></div>
                             <div className="content-text p-md-0">
@@ -37,14 +39,7 @@ function AboutUs() {
                             </div>
                         </div>
                     </div>
-
-                    <div className="col-sm-12 col-md-6 d-none d-sm-block">
-                        <img
-                            src="/images/about-us.png"
-                            alt="About Us"
-                            className="image-right"
-                        />
-                    </div>
+                    <div className="col-md-1"></div>
                 </div>
             </div>
         </div>

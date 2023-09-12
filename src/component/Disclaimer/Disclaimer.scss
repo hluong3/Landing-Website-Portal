@@ -1,5 +1,7 @@
 @import "../../styles/mixin.scss";
 .disclaimer {
+  font-family: 'HelveticaNeueMediumExtended';
+
   padding: 70px 0;
 
   @include sm {
@@ -27,11 +29,11 @@
   }
   .content {
     color: #fff;
-    font-size: 28px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.56px;
+    line-height: 2rem;
+    // letter-spacing: -0.56px;
     margin: 20px 0;
 
     @include sm {
@@ -51,10 +53,10 @@
   }
   button {
     width: 100%;
-    height: 100px;
-    border-radius: 30px;
+    height: 80px;
+    border-radius: 10px;
     background: #9436ff;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 500;
     align-self: center;
     &:focus {

@@ -28,11 +28,14 @@ function ContactUs() {
         alert("Message failed to send!");
       });
   };
+
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="contact-us">
         <div className="row heading p-md-0 ">
-          <div className="col-sm-12 col-md-6">
+
+          <div className="col-md-1"></div>
+          <div className="col-sm-12 col-md-10">
             <div className="split-container p-md-0">
               <div className="heading-line">
                 <hr />
@@ -40,14 +43,16 @@ function ContactUs() {
               <div className="heading-text">Contact Us</div>
             </div>
           </div>
+          <div className="col-md-1"></div>
 
-          <div className="col-sm-12 col-md-6"></div>
         </div>
 
         <div className="row content p-md-0">
-          <div className="col-sm-12 col-md-7">
+
+          <div className="col-md-1"></div>
+          <div className="col-sm-12 col-md-10">
             <div className="split-container p-md-0">
-              <div className="content-space"></div>
+              {/* <div className="content-space"></div> */}
 
               <div className="content-text p-md-0">
                 <p className="col-md-10">
@@ -56,20 +61,28 @@ function ContactUs() {
                   limitless opportunities in the digital asset and web3 realms
                   with you.
                 </p>
+
+                <p>For inquiries and partnerships, feel free to reach out:</p>
               </div>
             </div>
           </div>
+          <div className="col-md-1"></div>
+        </div>
 
-          <div className="col-sm-12 col-md-5">
+        <div className="row content p-md-0">
+          
+
+          <div className="col-md-3"></div>
+          <div className="col-sm-12 col-md-6">
             <form onSubmit={submit}>
-              <p>For inquiries and partnerships, feel free to reach out:</p>
+              
               <div className="form-group">
                 <label htmlFor="name">Name:</label>
                 <input
                   type="text"
                   className="form-control"
                   id="name"
-                  placeholder="[Your Name]"
+                  placeholder="Your Name"
                 />
               </div>
               <div className="form-group">
@@ -78,7 +91,7 @@ function ContactUs() {
                   type="email"
                   className="form-control"
                   id="email"
-                  placeholder="[Your Email]"
+                  placeholder="Your Email"
                 />
               </div>
               <div className="form-group">
@@ -87,7 +100,7 @@ function ContactUs() {
                   type="text"
                   className="form-control"
                   id="phone"
-                  placeholder="[Your Phone Number]"
+                  placeholder="Your Phone Number"
                 />
               </div>
               <div className="form-group">
@@ -96,7 +109,7 @@ function ContactUs() {
                   className="form-control"
                   id="message"
                   rows="3"
-                  placeholder="[Your Message]"
+                  placeholder="Your Message"
                 ></textarea>
               </div>
               <button type="submit" className="btn btn-primary">
@@ -104,6 +117,8 @@ function ContactUs() {
               </button>
             </form>
           </div>
+          <div className="col-md-3"></div>
+
         </div>
       </div>
     </div>

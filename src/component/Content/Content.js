@@ -61,7 +61,7 @@ function Content() {
   // };
 
   return (
-    <div className="container">
+    <div className="container-fluid p-0">
       <div className="container-content">
         <div style={{ height: "60px" }}></div>
         <div className="scrollable-content" style={{ overflow: "hidden" }}>

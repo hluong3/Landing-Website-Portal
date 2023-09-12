@@ -41,8 +41,8 @@
     font-size: $content-font-size;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.56px;
+    line-height: 2rem;
+    // letter-spacing: -0.56px;
 
     .split-container {
       display: flex;
@@ -166,8 +166,9 @@
     button {
       width: 100%;
       height: 80px;
+      margin-top: 40px;
       border: none;
-      border-radius: 30px;
+      border-radius: 10px;
       background: #d41876;
       color: #fff;
       font-size: $content-font-size;

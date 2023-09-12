@@ -5,10 +5,11 @@ import "./Careers.scss";
 
 function Careers() {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="careers">
         <div className="row heading p-md-0 ">
-          <div className="col-sm-12 col-md-6">
+          <div className="col-md-1"></div>
+          <div className="col-sm-12 col-md-10">
             <div className="split-container p-md-0">
               <div className="heading-line">
                 <hr />
@@ -16,19 +17,20 @@ function Careers() {
               <div className="heading-text">Careers</div>
             </div>
           </div>
-
-          <div className="col-sm-12 col-md-6"></div>
+          <div className="col-md-1"></div>
         </div>
 
         <div className="row content p-md-0">
-          <div className="col-12">
+          <div className="col-md-1"></div>
+
+          <div className="col-sm-12 col-md-10">
             <div className="split-container p-md-0">
-              <div className="content-space d-none d-sm-block"></div>
+              {/* <div className="content-space d-none d-sm-block"></div> */}
               <div className="content-text p-md-0">
                 <ul className="careers-list">
                   <li className="careers-item">
                     <SmoothScroll targetId="section7">
-                      <p className="underline">Junior Investment</p>
+                      <p className="underline">Junior Investment Analyst</p>
                     </SmoothScroll>
                     <ul className="careers-item-description">
                       <li>
@@ -75,6 +77,9 @@ function Careers() {
               </div>
             </div>
           </div>
+
+          <div className="col-md-1"></div>
+
         </div>
       </div>
     </div>

@@ -9,6 +9,14 @@ footer {
     align-items: center;
 
     .footer-logo-image {
+      // width: -webkit-fill-available;
+      max-height: 600px;
+
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      object-fit: cover;
+
       @include sm {
         margin-top: 20px;
         display: none;
@@ -67,8 +75,8 @@ footer {
     }
   }
   .icon {
-    width: 69px;
-    height: 69px;
+    width: 35px;
+    height: 35px;
     &-list {
       display: flex;
       justify-content: flex-end;

@@ -3,6 +3,16 @@
 .team{
     text-align: left;
 
+    .image{
+        margin-bottom: 95px;
+        img{
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
     .heading {
         margin-bottom: 1rem;
 
@@ -43,7 +53,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        letter-spacing: -0.56px;
+        // letter-spacing: -0.56px;
 
         .split-container{
             display: flex;
@@ -61,7 +71,9 @@
                 width: fit-content;
 
                 p{
+                    line-height: 2rem;
                     /* text-align: justify; */
+
                     .highlight{
                         font-family: 'HelveticaNeueLTW06-97BlkCnObl', sans-serif;
                         color: $third-color;
