@@ -81,6 +81,15 @@ function Footer() {
             </ul>
           </div>
         </div>
+        <div className="row">
+          <div className="col-md-8 d-flex justify-content-center mb-2">
+            <div className="login-button">
+              <Link to="/login">
+                <button className="btn login-button">Login</button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );

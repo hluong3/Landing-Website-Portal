@@ -1,7 +1,31 @@
 @import "../../styles/mixin.scss";
+
 footer {
   margin-top: 50px;
   overflow-x: hidden;
+  a {
+    text-decoration: none;
+  }
+  .login-button {
+    display: none;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: $third-color;
+    color: #fff;
+    width: 90px;
+    &:hover {
+      background-color: $second-color;
+      color: $third-color;
+    }
+
+    &:active {
+      background-color: $second-color;
+      color: $third-color;
+    }
+    @include sm {
+      display: block;
+    }
+  }
 
   .footer-logo {
     display: flex;
@@ -19,7 +43,6 @@ footer {
 
       @include sm {
         margin-top: 20px;
-        display: none;
       }
     }
   }
@@ -85,6 +108,10 @@ footer {
       li {
         margin: 0;
         margin-left: 20px;
+
+        &:first-child {
+          margin-left: 0;
+        }
       }
 
       @include md {
@@ -94,7 +121,7 @@ footer {
       @include sm {
         width: 100%;
         justify-content: center;
-        padding-right: 0;
+        padding-right: 12px;
       }
     }
   }

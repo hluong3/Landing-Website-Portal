@@ -1,5 +1,5 @@
 @import "../../styles/styles.scss";
-
+@import "../../styles/mixin.scss";
 .fixed-header {
   position: fixed;
   top: 0;
@@ -55,5 +55,11 @@
       background-color: $second-color;
       color: $third-color;
     }
+    @include sm {
+      display: none;
+    }
   }
+}
+.company_name {
+  font-family: "Voga" !important;
 }

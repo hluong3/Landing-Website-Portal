@@ -8,7 +8,7 @@ function Disclaimer() {
       <div className="disclaimer">
         <div className="row heading">
           <img className="disclaimer-image" src="/logo.png" alt="Disclaimer" />
-          <p className="company-name">Laniakea Capital</p>
+          <p className="company_name">Laniakea Capital</p>
         </div>
         <div className="row content">
           <p>

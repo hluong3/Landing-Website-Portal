@@ -28,7 +28,7 @@ function AboutUs() {
           <div className="col-md-1"></div>
           <div className="col-sm-12 col-md-10">
             <div className="split-container p-md-0">
-              <div className="content-space d-none d-sm-block"></div>
+              <div className="d-none d-sm-block"></div>
               <div className="content-text p-md-0">
                 <p>
                   Welcome to Laniakea — your gateway to the{" "}

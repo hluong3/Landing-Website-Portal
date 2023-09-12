@@ -6,3 +6,18 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Voga";
+  src: url("/fonts/VogaBold.ttf") format("truetype"),
+    url("/fonts/VogaMedium.ttf") format("truetype"),
+    url("/fonts/VogaRegular.ttf") format("truetype");
+  /* Add other font formats if available (e.g., .ttf, .eot) */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the font to an element */
+body {
+  font-family: "HelveticaNeueMediumExtended", sans-serif;
+}
