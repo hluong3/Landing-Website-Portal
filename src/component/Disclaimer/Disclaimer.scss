@@ -1,7 +1,5 @@
 @import "../../styles/mixin.scss";
 .disclaimer {
-  font-family: 'HelveticaNeueMediumExtended';
-
   padding: 70px 0;
 
   @include sm {
@@ -17,7 +15,6 @@
     }
     .company-name {
       color: #fff;
-      font-family: Voga;
       font-size: 88px;
       font-style: normal;
       font-weight: 500;

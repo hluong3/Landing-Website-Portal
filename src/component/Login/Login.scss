@@ -1,7 +1,6 @@
 @import "../../styles/mixin.scss";
 .login {
   // padding: 70px 0;
-  font-family: "HelveticaNeueMediumExtended", sans-serif;
 
   min-height: 100vh;
   display: grid;
@@ -20,7 +19,6 @@
     }
     .company-name {
       color: #fff;
-      font-family: Voga;
       font-size: 88px;
       font-style: normal;
       font-weight: 500;
@@ -50,7 +48,6 @@
   a {
     width: 100%;
   }
- 
 
   form {
     display: flex;
@@ -71,7 +68,7 @@
         width: 95%;
         margin: 0 auto;
       }
-      
+
       input {
         width: 100%;
         height: 70px;
@@ -92,15 +89,14 @@
       }
     }
 
-    .message-error{
+    .message-error {
       margin-bottom: 30px;
       width: 100%;
       text-align: center;
       color: red;
       font-style: italic;
       font-size: $content-font-size;
-      font-family: 'HelveticaNeueMediumExtended';
-    }    
+    }
 
     .btn-login {
       width: 100%;
@@ -133,7 +129,7 @@
     width: 100%;
     height: 70px;
     border-radius: 10px;
-    color:#fff;
+    color: #fff;
     background: #9436ff;
     font-size: $content-font-size;
     font-weight: 500;

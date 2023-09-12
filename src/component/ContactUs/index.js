@@ -7,14 +7,14 @@ const URL =
 function ContactUs() {
   const submit = (e) => {
     e.preventDefault();
-    const { name, email, phone, message } = e.target;
+    const { name, email, project_name, message } = e.target;
     fetch(URL, {
       method: "POST",
       mode: "no-cors",
       body: JSON.stringify({
         name: name.value,
         email: email.value,
-        phone: phone.value,
+        project_name: project_name.value,
         message: message.value,
       }),
     })
@@ -33,7 +33,6 @@ function ContactUs() {
     <div className="container-fluid">
       <div className="contact-us">
         <div className="row heading p-md-0 ">
-
           <div className="col-md-1"></div>
           <div className="col-sm-12 col-md-10">
             <div className="split-container p-md-0">
@@ -44,11 +43,9 @@ function ContactUs() {
             </div>
           </div>
           <div className="col-md-1"></div>
-
         </div>
 
         <div className="row content p-md-0">
-
           <div className="col-md-1"></div>
           <div className="col-sm-12 col-md-10">
             <div className="split-container p-md-0">
@@ -70,38 +67,20 @@ function ContactUs() {
         </div>
 
         <div className="row content p-md-0">
-          
-
-          <div className="col-md-3"></div>
+          <div className="col-md-1"></div>
           <div className="col-sm-12 col-md-6">
             <form onSubmit={submit}>
-              
               <div className="form-group">
                 <label htmlFor="name">Name:</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  placeholder="Your Name"
-                />
+                <input type="text" className="form-control" id="name" />
               </div>
               <div className="form-group">
                 <label htmlFor="email">Email:</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  placeholder="Your Email"
-                />
+                <input type="email" className="form-control" id="email" />
               </div>
               <div className="form-group">
-                <label htmlFor="phone">Phone:</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="phone"
-                  placeholder="Your Phone Number"
-                />
+                <label htmlFor="phone">Project Name:</label>
+                <input type="text" className="form-control" id="project_name" />
               </div>
               <div className="form-group">
                 <label htmlFor="message">Message:</label>
@@ -109,7 +88,6 @@ function ContactUs() {
                   className="form-control"
                   id="message"
                   rows="3"
-                  placeholder="Your Message"
                 ></textarea>
               </div>
               <button type="submit" className="btn btn-primary">
@@ -118,7 +96,6 @@ function ContactUs() {
             </form>
           </div>
           <div className="col-md-3"></div>
-
         </div>
       </div>
     </div>

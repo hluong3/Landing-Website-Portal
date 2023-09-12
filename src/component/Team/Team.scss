@@ -1,112 +1,101 @@
-@import '../../styles/styles.scss';
+@import "../../styles/styles.scss";
 
-.team{
-    text-align: left;
+.team {
+  text-align: left;
 
-    .image{
-        margin-bottom: 95px;
-        img{
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            object-fit: cover;
-        }
+  .image {
+    margin-bottom: 95px;
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .heading {
+    margin-bottom: 1rem;
+
+    .split-container {
+      display: flex;
+      align-items: center;
     }
 
-    .heading {
-        margin-bottom: 1rem;
+    .heading-line {
+      margin-right: 15px;
+      width: 55px;
+      height: auto;
 
-        .split-container{
-            display: flex;
-            align-items: center;
-        }
-    
-        .heading-line {
-            margin-right: 15px;
-            width: 55px;
-            height: auto;
+      > hr {
+        border: 2px solid $third-color;
+      }
+    }
 
-            > hr{
-                border: 2px solid $third-color;
-            }
-        }
+    .heading-text {
+      display: flex;
+      align-items: center;
+      color: $third-color;
 
-        .heading-text{
-            display: flex;
-            align-items: center;
+      font-size: $content-font-size;
+      font-style: normal;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+
+  .content {
+    margin-top: 15px;
+
+    color: $second-color;
+    font-size: $content-font-size;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    // letter-spacing: -0.56px;
+
+    .split-container {
+      display: flex;
+      align-items: center;
+
+      .content-space {
+        margin-right: 20px;
+        width: 55px;
+        height: auto;
+      }
+
+      .content-text {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: fit-content;
+
+        p {
+          line-height: 2rem;
+          /* text-align: justify; */
+
+          .highlight {
             color: $third-color;
-        
-            font-family: 'HelveticaNeueMediumExtended', sans-serif;
-            font-size: $content-font-size;
             font-style: normal;
-            font-weight: 500;
-            text-transform: capitalize;
+            font-weight: 900;
+            line-height: normal;
+          }
         }
+      }
     }
 
-    .content{
-        margin-top: 15px;
-    
-        color: $second-color;
-        font-family: 'HelveticaNeueMediumExtended', sans-serif;
-        font-size: $content-font-size;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        // letter-spacing: -0.56px;
-
-        .split-container{
-            display: flex;
-            align-items: center;
-
-            .content-space {
-                margin-right: 20px;
-                width: 55px;
-                height: auto; 
-            }
-
-            .content-text {
-                padding-left: 15px;
-                padding-right: 15px;
-                width: fit-content;
-
-                p{
-                    line-height: 2rem;
-                    /* text-align: justify; */
-
-                    .highlight{
-                        font-family: 'HelveticaNeueLTW06-97BlkCnObl', sans-serif;
-                        color: $third-color;
-                        font-style: normal;
-                        font-weight: 900;
-                        line-height: normal;
-                    }
-                }
-            }
-        }
-
-        .image-right{
-            object-fit: cover;
-            max-height: 370px;
-            width: -webkit-fill-available;
-        }
+    .image-right {
+      object-fit: cover;
+      max-height: 370px;
+      width: -webkit-fill-available;
     }
+  }
 }
 
 @media (max-width: 480px) {
-    .team{
-        .heading {
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-
-        }
+  .team {
+    .heading {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
     }
-    /* Your styles for mobile phones in portrait mode */
+  }
+  /* Your styles for mobile phones in portrait mode */
 }
-
-
-
-
-
-
-

@@ -55,10 +55,9 @@
       align-items: center;
       color: $third-color;
 
-      font-family: "HelveticaNeueMediumExtended", sans-serif;
       font-size: $content-font-size;
       font-style: normal;
-      font-weight: 500;
+      font-weight: bold;
       text-transform: capitalize;
     }
   }
@@ -67,7 +66,6 @@
     margin-top: 15px;
 
     color: $second-color;
-    font-family: "HelveticaNeueMediumExtended", sans-serif;
     font-size: $content-font-size;
     font-style: normal;
     font-weight: 500;
@@ -92,7 +90,6 @@
         p {
           /* text-align: justify; */
           .highlight {
-            font-family: "HelveticaNeueLTW06-97BlkCnObl", sans-serif;
             color: $third-color;
             font-style: normal;
             font-weight: 900;

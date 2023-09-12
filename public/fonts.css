@@ -1,40 +1,8 @@
 @font-face {
-  font-family: 'OpenSans';
-  src:  url('/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype'),
-        url('/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-family: "OpenSans";
+  src: url("/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype"),
+    url("/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
   /* Add other font formats if available (e.g., .ttf, .eot) */
   font-weight: normal;
   font-style: normal;
-  }
-
-@font-face {
-  font-family: 'HelveticaNeueMediumExtended';
-  src: url('/fonts/HelveticaMedExt.ttf') format('truetype'),
-       url('/fonts/HelveticaMedExtObl.ttf') format('truetype');
-  /* Add other font formats if available (e.g., .ttf, .eot) */
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-font-family: 'HelveticaNeueLTW06-97BlkCnObl';
-src: url('/fonts/Helvetica Neue LTW0697BlkCnObl.ttf') format('truetype');
-/* Add other font formats if available (e.g., .ttf, .eot) */
-font-weight: normal;
-font-style: normal;
-}
-
-@font-face {
-font-family: 'Voga';
-src: url('/fonts/VogaBold.ttf') format('truetype'),
-     url('/fonts/VogaMedium.ttf') format('truetype'),
-     url('/fonts/VogaRegular.ttf') format('truetype');
-/* Add other font formats if available (e.g., .ttf, .eot) */
-font-weight: normal;
-font-style: normal;
-}
-
-/* Apply the font to an element */
-body {
-font-family: 'HelveticaNeueMediumExtended', sans-serif;
 }
