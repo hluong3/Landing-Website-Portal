@@ -8,8 +8,9 @@ function Disclaimer() {
       <div className="disclaimer">
         <div className="row heading">
           <img className="disclaimer-image" src="/logo.png" alt="Disclaimer" />
-          <p className="company_name">Laniakea Capital</p>
+          <span className="company-name">Laniakea Capital</span>
         </div>
+
         <div className="row content">
           <p>
             Intellectual Property Rights: All content on this website is the

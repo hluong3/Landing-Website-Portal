@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "./Login.scss";
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+// import { Link } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [invalid, setInvalid] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleChangeEmail = (e) => {
     setInvalid(false);
@@ -21,6 +24,10 @@ function Login() {
     e.preventDefault();
     
     setInvalid(true);
+  };
+
+  const handleClickHome = () => {
+    navigate('/');
   };
 
   return (
@@ -65,11 +72,8 @@ function Login() {
               
               <button type="submit" className="btn btn-login">Login</button>
 
-              <Link to="/">
-                <button className="btn btn-home">Home</button>
-              </Link>
-
-              
+              <button className="btn btn-home" onClick={handleClickHome}>Home</button>
+            
             </form>
 
             

@@ -9,7 +9,7 @@ function Header() {
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img src="/logo.png" alt="Logo" className="logo" />
-            <span className="company_name">Laniakea Capital</span>
+            <span className="company-name">Laniakea Capital</span>
           </a>
 
           {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

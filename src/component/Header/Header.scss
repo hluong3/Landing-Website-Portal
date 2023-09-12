@@ -31,10 +31,12 @@
       height: 50px;
     }
 
-    > span {
+    .company-name {
+      font-family: "Voga" !important;
       padding-left: 15px;
       color: $second-color;
     }
+
   }
 
   .btn-client-login {
@@ -60,6 +62,4 @@
     }
   }
 }
-.company_name {
-  font-family: "Voga" !important;
-}
+
