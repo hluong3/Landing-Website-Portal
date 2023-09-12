@@ -13,7 +13,7 @@ function Footer() {
             <div className="footer-logo">
               <img
                 className="footer-logo-image"
-                src="/images/Footer_BG.png"
+                src="/images/footer_bg.png"
                 alt="Laniakea Footer Logo"
               />
             </div>

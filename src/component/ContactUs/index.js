@@ -7,14 +7,14 @@ const URL =
 function ContactUs() {
   const submit = (e) => {
     e.preventDefault();
-    const { name, email, project_name, message } = e.target;
+    const { name, email, phone, message } = e.target;
     fetch(URL, {
       method: "POST",
       mode: "no-cors",
       body: JSON.stringify({
         name: name.value,
         email: email.value,
-        project_name: project_name.value,
+        phone: phone.value,
         message: message.value,
       }),
     })
@@ -80,7 +80,7 @@ function ContactUs() {
               </div>
               <div className="form-group">
                 <label htmlFor="phone">Project Name:</label>
-                <input type="text" className="form-control" id="project_name" />
+                <input type="text" className="form-control" id="phone" />
               </div>
               <div className="form-group">
                 <label htmlFor="message">Message:</label>
