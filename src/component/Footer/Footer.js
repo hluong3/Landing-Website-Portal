@@ -54,7 +54,7 @@ function Footer() {
             <ul className="list-unstyled social-icons vertical-icons">
               <li>
                 <a
-                  href="https://twitter.com/portal_hq"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -67,7 +67,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://twitter.com/portal_hq"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
