@@ -9,13 +9,6 @@ import Disclaimer from './component/Disclaimer/index';
 
 function App() {
   return (
-    // <div className="App">
-    //   <Header />
-
-    //   <Content />
-
-    //   <Footer />
-    // </div>
     <Router>
       <Routes>
         <Route path="/" element={<Home />}></Route>
